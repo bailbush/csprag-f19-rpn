@@ -8,15 +8,26 @@ operators = {
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
+	'^': operator.pow,
 }
+
+def split_args(myarg)
+	"""split_args splits the operands and operations into a list 
+	"""
+	if len(myarg) == 0:
+		return []
+
+	return
 
 def calculate(myarg):
     stack = list()
+	arg_list = split_args(myarg)
     for token in myarg.split():
         try:
             token = int(token)
             stack.append(token)
         except ValueError:
+	# handle stack of brackets
             function = operators[token]
             arg2 = stack.pop()
             arg1 = stack.pop()
