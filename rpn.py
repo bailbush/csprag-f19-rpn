@@ -12,7 +12,7 @@ operators = {
 }
 
 def split_args(myarg)
-	"""split_args splits the operands and operations into a list 
+	"""split_args splits the operands and operations into a list  edit
 	"""
 	if len(myarg) == 0:
 		return []
