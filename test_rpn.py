@@ -16,5 +16,5 @@ class TestBasics(unittest.TestCase):
         result = rpn.calculate("6 3 /")
         self.assertEqual(2, result)
     def test_pow(self):
-	result = rpn.calulate("1 2 ^")
+	result = rpn.calculate("1 2 ^")
 	self.assertEqual(1, result)
